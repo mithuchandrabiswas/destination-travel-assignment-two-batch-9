@@ -4,15 +4,18 @@
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
 }
+
 a {
     text-decoration: none;
 }
+
 .container {
     width: 90%;
     max-width: 1170px;
     margin: 0 auto;
     margin-bottom: 30px;
 }
+
 .btn-primary {
     font-size: 1.25rem;
     /* font-size: 25px; */
@@ -40,32 +43,41 @@ a {
     display: flex;
     gap: 10px;
 }
+
 .nav-section .nav-logo img {}
+
 .nav-section .nav-logo h3.nav-title {
     color: #131318;
     font-size: 36px;
     font-weight: 800;
 }
+
 .nav-section .nav-logo h3.nav-title span {
     color: #FF5400;
 }
+
 .nav-section .nav-menu {}
+
 .nav-section .nav-menu ul {
     display: flex;
     gap: 20px;
 }
+
 .nav-section .nav-menu ul li {
     list-style: none;
 }
+
 .nav-section .nav-menu ul li a {
     color: #424247;
     text-align: center;
     font-size: 1.25rem;
     font-weight: 400;
 }
+
 .nav-section .nav-menu ul li a.active {
     color: #FF5400;
 }
+
 /* -------------Banner Section -------------*/
 .banner-section {
     display: flex;
@@ -80,7 +92,9 @@ a {
     border-radius: 16px;
     text-align: center;
 }
+
 .banner-section .banner-content {}
+
 .banner-section .banner-content h1.banner-title {
     color: #FFF;
     font-family: Mulish;
@@ -89,6 +103,7 @@ a {
     font-weight: 800;
     line-height: normal;
 }
+
 .banner-section .banner-content p.banner-description {
     width: 676px;
     color: #FFF;
@@ -97,6 +112,7 @@ a {
     line-height: 26px;
     margin: 20px 0px;
 }
+
 .banner-section .banner-content .banner-form {}
 
 /* --------Hero Section --------- */
@@ -106,15 +122,18 @@ a {
     align-items: center;
     gap: 3%;
 }
+
 .hero-section .hero-content {
     flex-basis: 52%;
     border: 1px solid red;
 }
+
 .hero-section .hero-content h1.hero-title {
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
 }
+
 .hero-section .hero-content p.hero-description {
     color: rgba(19, 19, 24, 0.70);
     font-family: Mulish;
@@ -123,6 +142,7 @@ a {
     line-height: 26px;
     margin: 20px 0px;
 }
+
 .hero-section .hero-content ul {}
 
 .hero-section .hero-content ul li {
@@ -132,23 +152,28 @@ a {
     line-height: 26px;
     margin-left: 25px;
 }
+
 .hero-section .hero-image {
     flex-basis: 45%;
     border: 1px solid red;
 }
+
 .hero-section .hero-image img {
     width: 100%;
     border-radius: 16px;
 }
+
 /* ------------Destination Section----------- */
 .destination-section {
     text-align: center;
 }
+
 .destination-section h1.destination-title {
     color: #131318;
     font-size: 40px;
     font-weight: 800;
 }
+
 .destination-section p.destination-description {
     width: 645px;
     margin: 24px auto;
@@ -161,17 +186,66 @@ a {
 
 /* ---------ChooseUs Section Start--------- */
 .chooseUs-section {}
+
 .chooseUs-section h2.chooseUs-title {
     color: #131318;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 800;
 }
+
 .chooseUs-section p.chooseUs-description {
     width: 645px;
     margin: 24px auto;
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.chooseUs-section .chooseUs-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.chooseUs-section .chooseUs-cards .card-item {
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.chooseUs-section .chooseUs-cards .card-item:nth-child(2) {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.chooseUs-section .chooseUs-cards .card-item:nth-child(3) {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.chooseUs-section .chooseUs-cards .card-item img {
+    width: 64px;
+    height: 64px;
+}
+
+.chooseUs-section .chooseUs-cards .card-item h4.card-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+.chooseUs-section .chooseUs-cards .card-item p.card-description {
+    color: #5A5A5D;
     font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
