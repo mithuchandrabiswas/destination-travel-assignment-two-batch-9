@@ -1,7 +1,7 @@
 
 
 
-@media screen and (min-width:350px) and (max-width:991px) {
+@media screen and (min-width:300px) and (max-width:600px) {
     .nav-section .nav-logo img {
         width: 30px;
         height: 30px;
@@ -202,9 +202,12 @@
         margin: 16px auto;
         font-size: .87rem;
     }
-
+    .video-section .video-section-video {
+        margin-top: 40px;
+    }
     .video-section .video-section-video iframe {
         height: 320px;
+        min-width: 290px;
     }
 
 
@@ -244,14 +247,14 @@
 
     .newsletter-image .newsletter-image-text {
         background-color: #FF5400;
-        width: 253px;
-        height: 91px;
+        width: 220px;
+        height: 85px;
         transform: rotate(-30deg);
-        padding: 20px;
+        padding: 15px;
         border-radius: 8px;
         position: absolute;
         top: 240px;
-        left: 140px;
+        left: 120px;
         margin: auto;
     }
     
@@ -340,4 +343,32 @@ select {
     text-align: center;
 }
   
+}
+@media screen and (min-width:1201px) {
+    .newsletter-image .newsletter-image-text {
+        width: 270px;
+        height: 102px;
+        position: absolute;
+        top: 244px;
+        left: 210px;
+    }
+    .newsletter-image .newsletter-image-text h4 {
+        color: #FFF;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .newsletter-image .newsletter-image-text h2 {
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-align: center;
+    }
+    
 }
