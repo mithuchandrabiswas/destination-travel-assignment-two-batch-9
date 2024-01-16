@@ -47,7 +47,7 @@ a {
 
 .nav-section .nav-logo h3.nav-title {
     color: #131318;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 800;
 }
 
@@ -56,7 +56,6 @@ a {
 }
 
 .nav-section .nav-menu {}
-
 .nav-section .nav-menu ul {
     display: flex;
     gap: 20px;
@@ -76,6 +75,10 @@ a {
 .nav-section .nav-menu ul li a.active {
     color: #FF5400;
 }
+.nav-section .menu-bar {
+    display: none;
+}
+
 
 /* -------------Banner Section -------------*/
 .banner-section {

@@ -1,4 +1,24 @@
 @media screen and (max-width:600px) {
+    .nav-section .nav-logo img {
+        width: 30px;
+        height: 30px;
+    }
+
+.nav-section .nav-logo h3.nav-title {
+    color: #131318;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.nav-section .nav-logo h3.nav-title span {
+    color: #FF5400;
+}
+    .nav-section .nav-menu {
+        display: none;
+    }
+    .nav-section .menu-bar {
+        display: block;
+    }
     .hero-section {
         flex-direction: column-reverse;
     }
@@ -30,6 +50,26 @@
     }
     .destination-section .destination-place-images img:nth-child(7) {
         grid-column: 1 /span 12;
+    }
+
+
+    .video-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .video-section .video-section-video {
+        flex-basis: 100%;
+    }
+
+    .newsletter-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .newsletter-section .newsletter-image {
+        width: 100%;
+    }
+    .newsletter-section .newsletter-image img {
+        width: 100%;
     }
     
 }
