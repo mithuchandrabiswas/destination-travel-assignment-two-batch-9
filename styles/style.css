@@ -93,6 +93,7 @@ a {
     border-radius: 16px;
     text-align: center;
     z-index: 0;
+    position: relative;
 }
 .banner-section::before {
     content: "";
@@ -125,7 +126,7 @@ a {
     margin: 20px auto;
 }
 
-.banner-section .banner-content .banner-btn {
+.banner-section .banner-content .banner-form {
     display: inline-flex;
     padding: 16px;
     align-items: flex-start;
@@ -134,7 +135,7 @@ a {
     background: rgba(255, 255, 255, 0.30);
 }
 
-.banner-section .banner-content .banner-btn input,select {
+.banner-section .banner-content .banner-form input,select {
     border-radius: 8px;
     background: #FFF;
     padding: 10px 20px;
@@ -142,7 +143,7 @@ a {
     outline: 0;
     font-size: 1.25rem;
 }
-.banner-section .banner-content .banner-btn {}
+.banner-section .banner-content .banner-form {}
 
 /* --------Hero Section --------- */
 .hero-section {
@@ -258,23 +259,19 @@ a {
     line-height: 26px;
 }
 
-.chooseUs-section .chooseUs-cards {
-    /* display: grid;
+.chooseUs-section .chooseUs-cards .card-container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 24px;
-    align-items: center; */
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    align-items: center;
 }
 
-.chooseUs-section .chooseUs-cards .card-item {
+.chooseUs-section .chooseUs-cards .card-container .card-item {
     padding: 20px;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
-    width: 45%;
 }
 .chooseUs-section .chooseUs-cards .card-item:nth-child(1) {
     background: rgba(251, 181, 99, 0.05);
@@ -332,12 +329,14 @@ a {
 .dealnDiscount-section .dealnDiscount-item {
     background: url("../Images/Group\ 39.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     object-fit: cover;
     height: 500px;
+    position: relative;
+    margin-bottom: 20px;
 }
 
-.dealnDiscount-section .dealnDiscount-item .dealnDiscount-item-content {
+.dealnDiscount-section .dealnDiscount-item .dealnDiscount-item-content:nth-child(1) {
     width: 580px;
     padding: 30px;
     border-radius: 16px;
@@ -347,6 +346,17 @@ a {
     position: relative;
     top: 18%;
     left: 45%;
+}
+.dealnDiscount-section .dealnDiscount-item .dealnDiscount-item-content:nth-child(2) {
+    width: 580px;
+    padding: 30px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .dealnDiscount-section .dealnDiscount-item .dealnDiscount-item-content .package-details {
@@ -427,9 +437,41 @@ a {
     margin-top: 0px;
 }
 
-.video-section .video-section-video {
-    flex-basis: 50%;
+.video-section .video-section-video iframe {
+    width: 500px;
+    height: 450px;
 }
+
+/* ------------------Offers Section---------- */
+.countable-section {
+    background: #d4d4dbbd;
+    padding: 50px 0px;
+    border-radius: 8px;
+}
+.countable-section .countable-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.countable-section .countable-container .traveler-data {}
+.countable-section .countable-container .traveler-data h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 53px;
+    color: #FF5400;
+}
+.countable-section .countable-container .traveler-data p {
+    font-size: 1rem;
+    color: #131318;
+    margin-top: 10px;
+}
+.countable-section .countable-container .v-line {
+    width: 3px;
+    height: 150px;
+    background: rgba(19, 19, 24, 0.10);
+}
+
 
 
 /* ------------------Newsletter Section-------------- */
