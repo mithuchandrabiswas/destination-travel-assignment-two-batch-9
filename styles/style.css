@@ -13,7 +13,7 @@ a {
     width: 90%;
     max-width: 1170px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .btn-primary {
@@ -56,6 +56,7 @@ a {
 }
 
 .nav-section .nav-menu {}
+
 .nav-section .nav-menu ul {
     display: flex;
     gap: 20px;
@@ -75,6 +76,7 @@ a {
 .nav-section .nav-menu ul li a.active {
     color: #FF5400;
 }
+
 .nav-section .menu-bar {
     display: none;
 }
@@ -95,6 +97,7 @@ a {
     z-index: 0;
     position: relative;
 }
+
 .banner-section::before {
     content: "";
     width: 100%;
@@ -135,7 +138,8 @@ a {
     background: rgba(255, 255, 255, 0.30);
 }
 
-.banner-section .banner-content .banner-form input,select {
+.banner-section .banner-content .banner-form input,
+select {
     border-radius: 8px;
     background: #FFF;
     padding: 10px 20px;
@@ -143,7 +147,7 @@ a {
     outline: 0;
     font-size: 1.25rem;
 }
-.banner-section .banner-content .banner-form {}
+
 
 /* --------Hero Section --------- */
 .hero-section {
@@ -152,14 +156,17 @@ a {
     align-items: center;
     gap: 3%;
 }
+
 .hero-section .hero-content {
     flex-basis: 52%;
 }
+
 .hero-section .hero-content h1.hero-title {
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
 }
+
 .hero-section .hero-content p.hero-description {
     max-width: 645px;
     color: rgba(19, 19, 24, 0.70);
@@ -169,6 +176,7 @@ a {
     line-height: 26px;
     margin: 20px 0px;
 }
+
 .hero-section .hero-content ul {}
 
 .hero-section .hero-content ul li {
@@ -182,6 +190,7 @@ a {
 .hero-section .hero-image {
     flex-basis: 45%;
 }
+
 .hero-section .hero-image img {
     width: 100%;
     border-radius: 16px;
@@ -206,15 +215,18 @@ a {
     font-weight: 400;
     line-height: 26px;
 }
+
 .destination-section .destination-place-images {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
 }
+
 .destination-section .destination-place-images img {
     width: 100%;
 }
+
 .destination-section .destination-place-images img:nth-child(1) {
     grid-column: 1 /span 6;
 }
@@ -222,18 +234,23 @@ a {
 .destination-section .destination-place-images img:nth-child(2) {
     grid-column: 7 /span 6;
 }
+
 .destination-section .destination-place-images img:nth-child(3) {
     grid-column: 1 /span 4;
 }
+
 .destination-section .destination-place-images img:nth-child(4) {
     grid-column: 5 /span 5;
 }
+
 .destination-section .destination-place-images img:nth-child(5) {
     grid-column: 10 /span 3;
 }
+
 .destination-section .destination-place-images img:nth-child(6) {
     grid-column: 1 /span 5;
 }
+
 .destination-section .destination-place-images img:nth-child(7) {
     grid-column: 6 /span 7;
 }
@@ -261,8 +278,8 @@ a {
 
 .chooseUs-section .chooseUs-cards .card-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 24px;
     align-items: center;
 }
@@ -272,16 +289,21 @@ a {
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
+    height: 300px;
 }
+
 .chooseUs-section .chooseUs-cards .card-item:nth-child(1) {
-    background: rgba(251, 181, 99, 0.05);
+    grid-column: 1 /span 6;
 }
+
 .chooseUs-section .chooseUs-cards .card-item:nth-child(2) {
     background: rgba(41, 206, 246, 0.05);
+    grid-column: 7 /span 6;
 }
 
 .chooseUs-section .chooseUs-cards .card-item:nth-child(3) {
     background: rgba(233, 68, 68, 0.05);
+    grid-column: 4 /span 6;
 }
 
 .chooseUs-section .chooseUs-cards .card-item img {
@@ -426,9 +448,8 @@ a {
     margin-top: 0px;
 }
 
-.video-section .video-section-video iframe {
-    width: 500px;
-    height: 450px;
+.video-section .video-section-video {
+    flex-basis: 50%;
 }
 
 /* ------------------Offers Section---------- */
@@ -437,24 +458,29 @@ a {
     padding: 50px 0px;
     border-radius: 8px;
 }
+
 .countable-section .countable-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
+
 .countable-section .countable-container .traveler-data {}
+
 .countable-section .countable-container .traveler-data h1 {
     font-size: 3rem;
     font-weight: 900;
     line-height: 53px;
     color: #FF5400;
 }
+
 .countable-section .countable-container .traveler-data p {
     font-size: 1rem;
     color: #131318;
     margin-top: 10px;
 }
+
 .countable-section .countable-container .v-line {
     width: 3px;
     height: 150px;
@@ -468,16 +494,55 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .newsletter-section .newsletter-form {
     padding: 40px;
-    flex-basis: 40%;
     border-radius: 16px;
     border: 1px solid #FF5400;
 }
 
 .newsletter-section .newsletter-form h2.newsletter-form-title {}
+
+.newsletter-image {
+    position: relative;
+}
+.newsletter-image img {
+    width: 100%;
+}
+.newsletter-image .newsletter-image-text {
+    background-color: #FF5400;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-30deg);
+    padding: 20px;
+    border-radius: 8px;
+    position: absolute;
+    top: 230px;
+    left: 340px;
+    margin: auto;
+}
+
+.newsletter-image .newsletter-image-text h4 {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.newsletter-image .newsletter-image-text h2 {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+}
 
 .newsletter-section .newsletter-form p.newsletter-form-description {
     color: #5A5A5D;
