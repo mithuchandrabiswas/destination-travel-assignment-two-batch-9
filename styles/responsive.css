@@ -4,60 +4,116 @@
         height: 30px;
     }
 
-.nav-section .nav-logo h3.nav-title {
-    color: #131318;
-    font-size: 1.25rem;
-    font-weight: 800;
-}
+    .nav-section .nav-logo h3.nav-title {
+        color: #131318;
+        font-size: 1.25rem;
+        font-weight: 800;
+    }
 
-.nav-section .nav-logo h3.nav-title span {
-    color: #FF5400;
-}
+    .nav-section .nav-logo h3.nav-title span {
+        color: #FF5400;
+    }
+
     .nav-section .nav-menu {
         display: none;
     }
+
     .nav-section .menu-bar {
         display: block;
     }
+
+    /* ----------------Hero Section---------- */
     .hero-section {
         flex-direction: column-reverse;
+        gap: 20px;
     }
+    .hero-section .hero-content h1.hero-title {
+        font-size: 1.25rem;
+    }
+    
+    .hero-section .hero-content p.hero-description {
+        margin: 16px auto;
+        font-size: .87rem;
+    }
+
+
+
+    /* ------------Destination Section----------- */
+    .destination-section h1.destination-title {
+        font-size: 1.25rem;
+    }
+
+    .destination-section p.destination-description {
+        margin: 16px auto;
+        font-size: .87rem;
+    }
+
     .destination-section .destination-place-images {
         width: 100%;
     }
+
     .destination-section .destination-place-images img {
         margin: 0;
         width: 100%;
         height: 200px;
-
     }
+
     .destination-section .destination-place-images img:nth-child(1) {
         grid-column: 1 /span 12;
     }
+
     .destination-section .destination-place-images img:nth-child(2) {
         grid-column: 1 /span 12;
     }
+
     .destination-section .destination-place-images img:nth-child(3) {
         grid-column: 1 /span 12;
     }
+
     .destination-section .destination-place-images img:nth-child(4) {
         grid-column: 1 /span 12;
     }
+
     .destination-section .destination-place-images img:nth-child(5) {
         grid-column: 1 /span 12;
     }
+
     .destination-section .destination-place-images img:nth-child(6) {
         grid-column: 1 /span 12;
     }
+
     .destination-section .destination-place-images img:nth-child(7) {
         grid-column: 1 /span 12;
     }
 
+    /* ---------ChooseUs Section Start--------- */
+    .chooseUs-section h2.chooseUs-title {
+        font-size: 1.75rem;
+    }
+    .chooseUs-section p.chooseUs-description {
+        max-width: 310px;
+        margin: 16px auto;
+        font-size: .87rem;
+    }
+    .chooseUs-section .chooseUs-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .chooseUs-section .chooseUs-cards .card-item {
+        width: 100%;
+    }
 
+/* ---------Deals & Discount Section Start--------- */
+.dealnDiscount-section .dealnDiscount-item {
+}
+
+
+/* -------------Video Section--------- */
     .video-section {
         flex-direction: column;
         gap: 20px;
     }
+
     .video-section .video-section-video {
         flex-basis: 100%;
     }
@@ -66,11 +122,13 @@
         flex-direction: column;
         gap: 20px;
     }
+
     .newsletter-section .newsletter-image {
         width: 100%;
     }
+
     .newsletter-section .newsletter-image img {
         width: 100%;
     }
-    
+
 }

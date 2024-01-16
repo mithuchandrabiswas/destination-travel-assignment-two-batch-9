@@ -104,12 +104,12 @@ a {
 }
 
 .banner-section .banner-content p.banner-description {
-    width: 676px;
+    max-width: 676px;
     color: #FFF;
     font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
-    margin: 20px 0px;
+    margin: 20px auto;
 }
 
 .banner-section .banner-content .banner-btn {
@@ -127,10 +127,8 @@ a {
     padding: 10px 20px;
     border: 0;
     outline: 0;
+    font-size: 1.25rem;
 }
-
-.banner-section .banner-content .banner-btn {}
-
 .banner-section .banner-content .banner-btn {}
 
 /* --------Hero Section --------- */
@@ -140,18 +138,16 @@ a {
     align-items: center;
     gap: 3%;
 }
-
 .hero-section .hero-content {
     flex-basis: 52%;
 }
-
 .hero-section .hero-content h1.hero-title {
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
 }
-
 .hero-section .hero-content p.hero-description {
+    max-width: 645px;
     color: rgba(19, 19, 24, 0.70);
     font-family: Mulish;
     font-size: 1rem;
@@ -159,7 +155,6 @@ a {
     line-height: 26px;
     margin: 20px 0px;
 }
-
 .hero-section .hero-content ul {}
 
 .hero-section .hero-content ul li {
@@ -172,9 +167,7 @@ a {
 
 .hero-section .hero-image {
     flex-basis: 45%;
-    border: 1px solid red;
 }
-
 .hero-section .hero-image img {
     width: 100%;
     border-radius: 16px;
@@ -192,7 +185,7 @@ a {
 }
 
 .destination-section p.destination-description {
-    width: 645px;
+    max-width: 645px;
     margin: 24px auto;
     color: rgba(19, 19, 24, 0.70);
     font-size: 1rem;
@@ -211,13 +204,7 @@ a {
 .destination-section .destination-place-images img:nth-child(1) {
     grid-column: 1 /span 6;
 }
-/* .destination-section .destination-place-images img:nth-child(1)::before {
-    content: Srilanka;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: red;
-} */
+
 .destination-section .destination-place-images img:nth-child(2) {
     grid-column: 7 /span 6;
 }
@@ -249,7 +236,7 @@ a {
 }
 
 .chooseUs-section p.chooseUs-description {
-    width: 645px;
+    max-width: 486px;
     margin: 24px auto;
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
@@ -259,11 +246,13 @@ a {
 }
 
 .chooseUs-section .chooseUs-cards {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 24px;
-    align-items: center;
+    align-items: center; */
+    display: flex;
+    gap: 15px;
 }
 
 .chooseUs-section .chooseUs-cards .card-item {
@@ -271,6 +260,7 @@ a {
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
+    width: 45%;
 }
 .chooseUs-section .chooseUs-cards .card-item:nth-child(1) {
     background: rgba(251, 181, 99, 0.05);
@@ -316,7 +306,7 @@ a {
 }
 
 .dealnDiscount-section p.dealnDiscount-description {
-    width: 645px;
+    max-width: 645px;
     margin: 24px auto;
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
@@ -390,6 +380,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
 }
 
 .video-section .video-section-content {
@@ -423,7 +414,7 @@ a {
 }
 
 .video-section .video-section-video {
-    flex-basis: 60%;
+    flex-basis: 50%;
 }
 
 
@@ -495,13 +486,13 @@ a {
     height: 46.673px;
 }
 
-.footer-section .footer-logo img h3.footer-title {
+.footer-section .footer-logo h3.footer-title {
     color: #131318;
     font-size: 36px;
     font-weight: 800;
 }
 
-.footer-section .footer-logo img h3.footer-title span {
+.footer-section .footer-logo h3.footer-title span {
     color: #FF5400;
 }
 
