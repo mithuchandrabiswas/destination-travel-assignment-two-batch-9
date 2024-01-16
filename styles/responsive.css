@@ -28,6 +28,7 @@
     .destination-section .destination-place-images img {
         margin: 0;
         width: 100%;
+        height: 200px;
 
     }
     .destination-section .destination-place-images img:nth-child(1) {
