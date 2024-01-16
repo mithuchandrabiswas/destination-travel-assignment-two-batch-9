@@ -151,10 +151,22 @@
     }
 
     /* ---------Deals & Discount Section Start--------- */
-    .dealnDiscount-section .dealnDiscount-item {}
+    .dealnDiscount-section .dealnDiscount-item {
+        margin-bottom: 30px;
+    }
 
     .dealnDiscount-section .dealnDiscount-item {}
-
+    .dealnDiscount-section .dealnDiscount-item .dealnDiscount-item-content {
+        width: 350px;
+        padding: 10px;
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        position: relative;
+        top: 30%;
+        left: 0;
+    }
 
     /* -------------Video Section--------- */
     .video-section {

@@ -336,7 +336,7 @@ a {
     margin-bottom: 20px;
 }
 
-.dealnDiscount-section .dealnDiscount-item .dealnDiscount-item-content:nth-child(1) {
+.dealnDiscount-section .dealnDiscount-item .dealnDiscount-item-content {
     width: 580px;
     padding: 30px;
     border-radius: 16px;
@@ -346,17 +346,6 @@ a {
     position: relative;
     top: 18%;
     left: 45%;
-}
-.dealnDiscount-section .dealnDiscount-item .dealnDiscount-item-content:nth-child(2) {
-    width: 580px;
-    padding: 30px;
-    border-radius: 16px;
-    border: 2px solid #FFF;
-    background: rgba(255, 255, 255, 0.80);
-    backdrop-filter: blur(2.5px);
-    position: relative;
-    top: 0;
-    left: 0;
 }
 
 .dealnDiscount-section .dealnDiscount-item .dealnDiscount-item-content .package-details {
