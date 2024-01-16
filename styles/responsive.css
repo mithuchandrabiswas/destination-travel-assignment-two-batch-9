@@ -22,15 +22,56 @@
         display: block;
     }
 
+    /* -----------Banner Section--------- */
+    .banner-section {
+        padding: 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+        border-radius: 16px;
+        text-align: center;
+        position: relative;
+    }
+
+    .banner-section .banner-content h1.banner-title {
+        font-size: 1.375rem;
+    }
+
+    .banner-section .banner-content p.banner-description {
+        max-width: 310px;
+        font-size: 0.875rem;
+    }
+
+    .banner-section .banner-content .banner-btn {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.30);
+    }
+
+    .banner-section .banner-content .banner-btn input,
+    select,
+    button {
+        width: 100%;
+    }
+
+
     /* ----------------Hero Section---------- */
     .hero-section {
         flex-direction: column-reverse;
         gap: 20px;
     }
+
     .hero-section .hero-content h1.hero-title {
         font-size: 1.25rem;
     }
-    
+
     .hero-section .hero-content p.hero-description {
         margin: 16px auto;
         font-size: .87rem;
@@ -90,25 +131,27 @@
     .chooseUs-section h2.chooseUs-title {
         font-size: 1.75rem;
     }
+
     .chooseUs-section p.chooseUs-description {
         max-width: 310px;
         margin: 16px auto;
         font-size: .87rem;
     }
+
     .chooseUs-section .chooseUs-cards {
         display: flex;
         flex-direction: column;
     }
+
     .chooseUs-section .chooseUs-cards .card-item {
         width: 100%;
     }
 
-/* ---------Deals & Discount Section Start--------- */
-.dealnDiscount-section .dealnDiscount-item {
-}
+    /* ---------Deals & Discount Section Start--------- */
+    .dealnDiscount-section .dealnDiscount-item {}
 
 
-/* -------------Video Section--------- */
+    /* -------------Video Section--------- */
     .video-section {
         flex-direction: column;
         gap: 20px;
