@@ -36,7 +36,6 @@ a {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    border: 1px solid #424247;
 }
 
 .nav-section .nav-logo {
@@ -97,11 +96,8 @@ a {
 
 .banner-section .banner-content h1.banner-title {
     color: #FFF;
-    font-family: Mulish;
     font-size: 4rem;
-    font-style: normal;
     font-weight: 800;
-    line-height: normal;
 }
 
 .banner-section .banner-content p.banner-description {
@@ -113,7 +109,26 @@ a {
     margin: 20px 0px;
 }
 
-.banner-section .banner-content .banner-form {}
+.banner-section .banner-content .banner-btn {
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.banner-section .banner-content .banner-btn input,select {
+    border-radius: 8px;
+    background: #FFF;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+}
+
+.banner-section .banner-content .banner-btn {}
+
+.banner-section .banner-content .banner-btn {}
 
 /* --------Hero Section --------- */
 .hero-section {
@@ -125,7 +140,6 @@ a {
 
 .hero-section .hero-content {
     flex-basis: 52%;
-    border: 1px solid red;
 }
 
 .hero-section .hero-content h1.hero-title {
@@ -182,6 +196,43 @@ a {
     font-weight: 400;
     line-height: 26px;
 }
+.destination-section .destination-place-images {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+}
+.destination-section .destination-place-images img {
+    width: 100%;
+}
+.destination-section .destination-place-images img:nth-child(1) {
+    grid-column: 1 /span 6;
+}
+/* .destination-section .destination-place-images img:nth-child(1)::before {
+    content: Srilanka;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: red;
+} */
+.destination-section .destination-place-images img:nth-child(2) {
+    grid-column: 7 /span 6;
+}
+.destination-section .destination-place-images img:nth-child(3) {
+    grid-column: 1 /span 4;
+}
+.destination-section .destination-place-images img:nth-child(4) {
+    grid-column: 5 /span 5;
+}
+.destination-section .destination-place-images img:nth-child(5) {
+    grid-column: 10 /span 3;
+}
+.destination-section .destination-place-images img:nth-child(6) {
+    grid-column: 1 /span 5;
+}
+.destination-section .destination-place-images img:nth-child(7) {
+    grid-column: 6 /span 7;
+}
 
 
 /* ---------ChooseUs Section Start--------- */
@@ -209,7 +260,6 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 24px;
-    justify-content: center;
     align-items: center;
 }
 
@@ -219,16 +269,14 @@ a {
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
 }
-
+.chooseUs-section .chooseUs-cards .card-item:nth-child(1) {
+    background: rgba(251, 181, 99, 0.05);
+}
 .chooseUs-section .chooseUs-cards .card-item:nth-child(2) {
-    border-radius: 16px;
-    border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
 }
 
 .chooseUs-section .chooseUs-cards .card-item:nth-child(3) {
-    border-radius: 16px;
-    border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
 }
 
@@ -472,6 +520,7 @@ a {
 }
 
 .footer-section .social-icons i {}
+
 .footer-section .line {
     margin: auto;
     max-width: 65%;
@@ -479,6 +528,7 @@ a {
     background: rgba(19, 19, 24, 0.10);
     margin-bottom: 18px;
 }
+
 .footer-section p.copyright-text {
     color: #131318;
     font-size: 1rem;
