@@ -574,7 +574,24 @@ select {
 .newsletter-section .newsletter-form form button {
     width: 100%;
 }
-
+.newsletter-section .newsletter-image {
+    position: relative;
+}
+.newsletter-section .newsletter-image img {
+    height: 400px;
+}
+.newsletter-image .newsletter-image-text {
+    background-color: #FF5400;
+    width: 300px;
+    height: 120px;
+    transform: rotate(-30deg);
+    padding: 20px;
+    border-radius: 8px;
+    position: absolute;
+    top: 210px;
+    left: 210px;
+    margin: auto;
+}
 
 
 
@@ -640,3 +657,12 @@ select {
     text-align: center;
     margin-top: 30px;
 }
+
+
+
+
+
+
+
+
+
