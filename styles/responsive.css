@@ -1,4 +1,7 @@
-@media screen and (max-width:600px) {
+
+
+
+@media screen and (min-width:350px) and (max-width:991px) {
     .nav-section .nav-logo img {
         width: 30px;
         height: 30px;
@@ -247,8 +250,8 @@
         padding: 20px;
         border-radius: 8px;
         position: absolute;
-        top: 130px;
-        left: 191px;
+        top: 240px;
+        left: 140px;
         margin: auto;
     }
     
@@ -289,7 +292,7 @@
 
 }
 
-@media screen and (min-width:992px){
+@media screen and (min-width:992px) and (max-width:1200px) {
     .banner-section .banner-content .banner-form input,
 select {
     font-size: 1rem;
@@ -336,6 +339,5 @@ select {
     line-height: normal;
     text-align: center;
 }
-
-    
+  
 }
