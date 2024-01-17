@@ -1,7 +1,7 @@
 
 
 
-@media screen and (min-width:300px) and (max-width:600px) {
+@media screen and (max-width:600px) {
     .nav-section .nav-logo img {
         width: 30px;
         height: 30px;
@@ -65,12 +65,13 @@
 
     .banner-section .banner-content .banner-form button.banner-btn {
         width: 100%;
+        font-weight: 400;
     }
 
 
     /* ----------------Hero Section---------- */
     .hero-section {
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 20px;
     }
 
@@ -97,6 +98,7 @@
 
     .destination-section .destination-place-images {
         width: 100%;
+        gap: 20px;
     }
 
     .destination-section .destination-place-images img {
@@ -148,6 +150,9 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+    .chooseUs-section .chooseUs-cards .card-container .card-item {
+        height: 100%;
+    }
     .chooseUs-section .chooseUs-cards .card-item:nth-child(1) {
         grid-column: 1 /span 12;
     }
@@ -160,25 +165,31 @@
         background: rgba(233, 68, 68, 0.05);
         grid-column: 1 /span 12;
     }
-    
 
     /* ---------Deals & Discount Section Start--------- */
     .dealnDiscount-section .dealnDiscount-item {
         margin-bottom: 30px;
+        height: 100%;
     }
 
-    .dealnDiscount-section .dealnDiscount-item {}
-
+    .dealnDiscount-section .dealnDiscount-item {
+        padding: 150px 0px;
+    }
+    .dealnDiscount-item .dnd-item-1,.dnd-item-2 {
+        position: relative;
+        top: 100px;
+        left: 80%;
+    }
     .dealnDiscount-section .dealnDiscount-item .dealnDiscount-item-content {
-        width: 350px;
-        padding: 10px;
+        padding: 30px;
         border-radius: 16px;
         border: 2px solid #FFF;
         background: rgba(255, 255, 255, 0.80);
         backdrop-filter: blur(2.5px);
         position: relative;
-        top: 30%;
-        left: 0;
+        top: 100px;
+        left: 10%;
+        min-width: 80%;
     }
 
     .dealnDiscount-section h2.dealnDiscount-title {
@@ -187,9 +198,14 @@
         font-size: 1.25rem;
         font-weight: 800;
       }
+      .dealnDiscount-section .dealnDiscount-item .dealnDiscount-item-content .package-details {
+        flex-wrap: wrap;
+        overflow: hidden;
+      }
     /* -------------Video Section--------- */
     .video-section {
         flex-direction: column;
+        align-items: normal;
         gap: 20px;
     }
 
@@ -227,9 +243,6 @@
         margin: 20px 0;
     }
 
-
-
-
     /* ------------Newslatter Section---------- */
     .newsletter-section {
         flex-direction: column;
@@ -247,22 +260,21 @@
 
     .newsletter-image .newsletter-image-text {
         background-color: #FF5400;
-        width: 220px;
-        height: 85px;
+        width: 180px;
+        height: 70px;
         transform: rotate(-30deg);
         padding: 15px;
         border-radius: 8px;
         position: absolute;
-        top: 240px;
-        left: 120px;
-        margin: auto;
+        top: 70%;
+        left: 65%;
     }
     
     .newsletter-image .newsletter-image-text h4 {
         color: #FFF;
         text-align: center;
         font-family: Mulish;
-        font-size: 18px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -270,7 +282,7 @@
     .newsletter-image .newsletter-image-text h2 {
         color: #FFF;
         font-family: Mulish;
-        font-size: 24px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 800;
         line-height: normal;
@@ -292,39 +304,39 @@
     .footer-section .footer-logo h3.footer-title span {
         color: #FF5400;
     }
-
 }
 
+/* --------Media Query -- Min-width:992px------- */
 @media screen and (min-width:992px) and (max-width:1200px) {
-    .banner-section .banner-content .banner-form input,
-select {
-    font-size: 1rem;
+    .nav-section .nav-logo h3.nav-title {
+        font-size: 1.75rem;
+    }
+    .banner-section .banner-content .banner-form input,select {
+    font-size: .875rem;
 }
-.banner-section .banner-content .banner-form .banner-btn {
-    font-size: 1rem;
+    .banner-section .banner-content .banner-form .banner-btn {
+    font-size: .875rem;
     padding: 10px 20px;
     line-height: -14px;
 }
-.banner-section .banner-content .banner-form .banner-btn img {
+    .banner-section .banner-content .banner-form .banner-btn img {
     width: 14px;
     height: 14px;
 }
-
-.hero-section .hero-image img {
+    .hero-section .hero-image img {
     height: 550px;
 }
-.newsletter-image img {
+    .newsletter-image img {
     height: 400px;
 }
-.newsletter-image .newsletter-image-text {
-    width: 235px;
-    height: 102px;
+    .newsletter-image .newsletter-image-text {
+    width: 223px;
+    height: 94px;
     position: absolute;
-    top: 244px;
-    left: 176px;
+    top: 63%;
+    left: 40%;
 }
-
-.newsletter-image .newsletter-image-text h4 {
+    .newsletter-image .newsletter-image-text h4 {
     color: #FFF;
     text-align: center;
     font-family: Mulish;
@@ -333,7 +345,7 @@ select {
     font-weight: 400;
     line-height: normal;
 }
-.newsletter-image .newsletter-image-text h2 {
+    .newsletter-image .newsletter-image-text h2 {
     color: #FFF;
     font-family: Mulish;
     font-size: 24px;
@@ -341,16 +353,16 @@ select {
     font-weight: 800;
     line-height: normal;
     text-align: center;
+} 
 }
-  
-}
+
 @media screen and (min-width:1201px) {
     .newsletter-image .newsletter-image-text {
         width: 270px;
         height: 102px;
         position: absolute;
-        top: 244px;
-        left: 210px;
+        top: 58%;
+        left: 47%;
     }
     .newsletter-image .newsletter-image-text h4 {
         color: #FFF;

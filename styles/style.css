@@ -352,22 +352,31 @@ select {
     background: url("../Images/Group\ 39.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left;
     object-fit: cover;
-    height: 500px;
+    padding: 80px 0px;
     position: relative;
     margin-bottom: 20px;
+    border-radius: 8px;
 }
 
+.dealnDiscount-item .dnd-item-1 {
+    position: relative;
+    top: 18%;
+    left: 45%;
+}
+.dealnDiscount-item .dnd-item-2 {
+    position: relative;
+    top: 18%;
+    left: 15%;
+}
 .dealnDiscount-section .dealnDiscount-item .dealnDiscount-item-content {
-    width: 580px;
+    width: 50%;
     padding: 30px;
     border-radius: 16px;
     border: 2px solid #FFF;
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2.5px);
-    position: relative;
-    top: 18%;
-    left: 45%;
 }
 
 .dealnDiscount-section .dealnDiscount-item .dealnDiscount-item-content .package-details {
@@ -588,7 +597,7 @@ select {
     border-radius: 8px;
     position: absolute;
     top: 60%;
-    left: 55%;
+    left: 60%;
     margin: auto;
 }
 
@@ -597,7 +606,7 @@ select {
 /* -------------Footer Section------------ */
 .footer-section {
     background: rgba(19, 19, 24, 0.05);
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .footer-section .footer-logo {
